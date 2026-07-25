@@ -1,6 +1,18 @@
 # Shattered Pixel Dungeon Sci-Fi Mod - Agent Prompts (Stage 1: Text)
 
-To accomplish the first stage of transforming the game's text into a modern/industrial/sci-fi aesthetic, we will divide the work among **5 agents**. Each agent will handle a distinct category of files, ensuring no overlap in their work.
+To accomplish the first stage of transforming the game's text into our specific setting, we will divide the work among **5 agents**. Each agent will handle a distinct category of files, ensuring no overlap in their work.
+
+---
+
+## Global Context & Lore (READ FIRST)
+All agents must adhere to the following master lore and tone for their text replacements:
+
+- **Genre:** Lighthearted, Survival Horror.
+- **Setting:** A modern, sprawling factory that manufactures specialized anti-friction ball bearings. It appears mundane on the surface (offices, break rooms, restrooms, tool rooms, supply depots) but contains various manufacturing departments (Screw Machine, Grind, Heat-Treat, Assembly) and mysterious hidden areas (catwalks, trenches, ventilation ducts, server rooms, research labs).
+- **Background:** The factory is in disarray due to mismanagement and reckless experimentation with new technology based on ancient scrolls. Toxic spills have contaminated the area, causing remaining workers to mutate into horrible monsters. The experimentation with anti-friction tech has caused space-time instability, turning the factory into a shifting, procedural maze.
+- **The Heroes:** The player characters are members of the Janitorial crew (inexperienced lads mentored by an aging Custodian), tasked with cleaning up this unprecedented, chaotic mess.
+- **The Objective:** Discover the root cause, clean up the spills, deal with the mutated riffraff, and ultimately destroy the heart of the chaos: a ball bearing of ultimate, infinite precision that is opening rifts into alternate universes.
+- **Items:** Cleaning supplies, PPE (Personal Protective Equipment), maintenance tools, and specialized industrial equipment.
 
 ---
 
@@ -23,11 +35,13 @@ Verify that your changes compile and run without errors. Do not make any changes
 ---
 
 ## Agent 2: Items & Plants (Equipment & Consumables)
-**Objective:** Rewrite all in-game text related to items and plants to fit the new modern/industrial/sci-fi aesthetic.
+**Objective:** Rewrite all in-game text related to items and plants to fit the new Janitorial/Factory aesthetic.
 
 **Prompt for the Agent:**
 ```
-You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic from magical/fantasy to modern/industrial/sci-fi.
+You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
+
+Please read the "Global Context & Lore" carefully before starting.
 
 Your specific domain is **Items and Plants**.
 Target Directories:
@@ -35,14 +49,14 @@ Target Directories:
 - `core/src/main/assets/messages/plants/`
 
 Instructions:
-1. Open the base English `.properties` files in these directories (e.g., `items.properties`, `plants.properties`). Do NOT touch files with language codes (e.g., `_ru`, `_es`).
-2. Rewrite the names and descriptions of all entries to fit a sci-fi/industrial setting.
-   - Example 1: Change "Sword" to "Plasma Cutter" or "Vibro-blade".
-   - Example 2: Change "Health Potion" to "Med-Stim" or "Nanite Injector".
-   - Example 3: Change "Scroll of Upgrade" to "Firmware Update" or "Overclock Module".
-   - Example 4: Change "Firebloom" to "Incendiary Charge" or "Thermite Trap".
+1. Open the base English `.properties` files in these directories (e.g., `items.properties`, `plants.properties`). Do NOT touch files with language codes.
+2. Rewrite the names and descriptions of all entries to fit the factory janitorial setting.
+   - Example 1: Change "Sword" or "Dagger" to "Heavy-Duty Mop" or "Pipe Wrench".
+   - Example 2: Change "Health Potion" to "First-Aid Spray" or "Energy Drink".
+   - Example 3: Change "Scroll of Upgrade" to "Equipment Requisition Form" or "Maintenance Manual".
+   - Example 4: Change plants/seeds to various chemical spills, molds, or specialized cleaning compounds.
 3. Maintain the original formatting, placeholders (like `%s` or `%d`), and keys within the `.properties` files. Only change the values (the text after the `=` sign).
-4. Keep the descriptions engaging, cohesive with a unified sci-fi lore, and ensure they accurately reflect what the item does mechanically.
+4. Keep the descriptions engaging, cohesive with the janitorial lore, and ensure they accurately reflect what the item does mechanically.
 
 Make sure you do not alter files outside of your target directories.
 ```
@@ -50,25 +64,27 @@ Make sure you do not alter files outside of your target directories.
 ---
 
 ## Agent 3: Actors (Characters, Enemies, & NPCs)
-**Objective:** Rewrite all in-game text related to the player characters, enemies, and NPCs to fit the new modern/industrial/sci-fi aesthetic.
+**Objective:** Rewrite all in-game text related to the player characters, enemies, and NPCs to fit the mutated factory worker and janitorial crew theme.
 
 **Prompt for the Agent:**
 ```
-You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic from magical/fantasy to modern/industrial/sci-fi.
+You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
+
+Please read the "Global Context & Lore" carefully before starting.
 
 Your specific domain is **Actors** (Enemies, NPCs, and Player Classes).
 Target Directory:
 - `core/src/main/assets/messages/actors/`
 
 Instructions:
-1. Open the base English `.properties` files in this directory (e.g., `actors.properties`). Do NOT touch files with language codes.
-2. Rewrite the names and descriptions of all entities to fit a sci-fi/industrial setting.
-   - Example 1: Change "Rat" to "Maintenance Drone" or "Scrap-Bot".
-   - Example 2: Change "Goblin" to "Mutant Scavenger" or "Rogue Android".
-   - Example 3: Change "Shopkeeper" to "Quartermaster" or "Black Market Vendor".
-   - Example 4: Change "Mage" (player class) to "Technician" or "Hacker".
+1. Open the base English `.properties` files in this directory. Do NOT touch files with language codes.
+2. Rewrite the names and descriptions of all entities to fit the factory setting.
+   - Example 1: Change basic enemies like "Rat" to "Mutated Lab Rat" or "Rogue Roomba".
+   - Example 2: Change mid-tier enemies like "Gnoll" or "Skeleton" to "Toxic Shift Worker" or "Corrupted Foreman".
+   - Example 3: Change "Shopkeeper" to "Vending Machine Dispenser" or "Cynical Union Rep".
+   - Example 4: Change Player Classes (Warrior, Mage, Rogue, Huntress) to variations of the Janitorial Crew (e.g., "Rookie Sweeper", "Bio-Hazard Tech", "Aging Custodian").
 3. Maintain the original formatting, placeholders (like `%s` or `%d`), and keys within the `.properties` files. Only change the values.
-4. Keep the descriptions engaging and ensure they build a consistent sci-fi universe.
+4. Keep the descriptions engaging, slightly humorous but creepy, and build a consistent factory universe.
 
 Make sure you do not alter files outside of your target directory.
 ```
@@ -76,11 +92,13 @@ Make sure you do not alter files outside of your target directory.
 ---
 
 ## Agent 4: Environment & Lore (Levels, Journal, & Scenes)
-**Objective:** Rewrite the setting descriptions, lore notes, story scenes, and level names to establish the modern/industrial/sci-fi world.
+**Objective:** Rewrite the setting descriptions, lore notes, story scenes, and level names to establish the shifting factory environments and the backstory of the infinite precision ball bearing.
 
 **Prompt for the Agent:**
 ```
-You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic from magical/fantasy to modern/industrial/sci-fi.
+You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
+
+Please read the "Global Context & Lore" carefully before starting.
 
 Your specific domain is **Environment & Lore**.
 Target Directories:
@@ -90,12 +108,12 @@ Target Directories:
 
 Instructions:
 1. Open the base English `.properties` files in these directories. Do NOT touch files with language codes.
-2. Rewrite the environment names, scene text, and journal lore to fit a sci-fi/industrial setting.
-   - Example 1: Change "The Sewers" to "Lower Maintenance Shafts" or "Coolant Tunnels".
-   - Example 2: Change "The Prison" to "Detention Block" or "Quarantine Zone".
-   - Example 3: Update journal entries from ancient magical lore to logs from scientists, facility managers, or corrupted AI.
+2. Rewrite the environment names, scene text, and journal lore to fit the factory setting.
+   - Example 1: Change "The Sewers" to "Break Rooms & Offices" or "Supply Depots".
+   - Example 2: Change deeper levels like "The Prison" or "The City" to "Screw Machine Dept", "Grind Dept", "Heat-Treat", or "Assembly".
+   - Example 3: Update journal entries from ancient magical lore to misplaced memos, warning labels, shift logs, and frantic notes from scientists discovering the space-time rifts caused by the "ultimate ball bearing".
 3. Maintain the original formatting, placeholders (like `%s` or `%d`), and keys within the `.properties` files. Only change the values.
-4. Ensure the narrative flows logically and builds an immersive sci-fi atmosphere.
+4. Ensure the narrative flows logically, capturing the mundane surface transitioning into the bizarre, dimension-shifting depths of the factory.
 
 Make sure you do not alter files outside of your target directories.
 ```
@@ -103,11 +121,13 @@ Make sure you do not alter files outside of your target directories.
 ---
 
 ## Agent 5: UI & Misc (User Interface, Windows, & System Text)
-**Objective:** Update the user interface text, system messages, and window prompts to sound like a futuristic OS or heads-up display (HUD).
+**Objective:** Update the user interface text, system messages, and window prompts to sound like a janitor's logbook, a factory PA system, or an employee handbook.
 
 **Prompt for the Agent:**
 ```
-You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic from magical/fantasy to modern/industrial/sci-fi.
+You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
+
+Please read the "Global Context & Lore" carefully before starting.
 
 Your specific domain is **UI & Misc**.
 Target Directories:
@@ -117,12 +137,13 @@ Target Directories:
 
 Instructions:
 1. Open the base English `.properties` files in these directories. Do NOT touch files with language codes.
-2. Rewrite the UI elements, system messages, and window text to fit a sci-fi/industrial HUD or OS interface.
-   - Example 1: Change "Magic Mapping" to "Area Scan Complete".
-   - Example 2: Change "Cast Spell" to "Deploy Ability" or "Execute Routine".
-   - Example 3: Change "Inventory" to "Cargo" or "Storage Matrix".
+2. Rewrite the UI elements, system messages, and window text to fit a factory/janitorial interface.
+   - Example 1: Change "Magic Mapping" to "Reviewing Facility Blueprint".
+   - Example 2: Change "Cast Spell" to "Apply Solvent" or "Use Equipment".
+   - Example 3: Change "Inventory" to "Utility Cart" or "Toolbelt".
+   - Example 4: Change level-up or resting messages to "Taking a Union-Mandated Break" or "Earning Overtime Pay".
 3. Maintain the original formatting, placeholders (like `%s` or `%d`), and keys within the `.properties` files. Only change the values.
-4. Ensure the new terminology is intuitive so the player still understands how to play the game, but clearly reflects a futuristic setting.
+4. Ensure the new terminology is intuitive so the player still understands how to play the game, while keeping the lighthearted, bureaucratic factory tone.
 
 Make sure you do not alter files outside of your target directories.
 ```
