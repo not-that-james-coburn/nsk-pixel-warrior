@@ -39,6 +39,10 @@ Verify that your changes compile and run without errors. Do not make any changes
 
 **Prompt for the Agent:**
 ```
+
+### QA Feedback / Adjustments
+- **Inconsistencies Found:** There are hundreds of lingering references to `wands`, `rings`, `armor`, `weapon`, `scroll`, `potion`, `sword`, `gold`, and `coins` across item properties.
+- **Action Required:** Ensure *all* classic RPG terms are completely replaced with factory/janitorial equivalents (e.g., `wand` -> `tool`, `ring` -> `badge`, `scroll` -> `form/manual`, `potion` -> `spray/drink`, `armor` -> `PPE/coveralls`, `gold` -> `company scrip/overtime pay`).
 You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
 
 Please read the "Global Context & Lore" carefully before starting.
@@ -68,6 +72,10 @@ Make sure you do not alter files outside of your target directories.
 
 **Prompt for the Agent:**
 ```
+
+### QA Feedback / Adjustments
+- **Inconsistencies Found:** There are over 700 lingering references to `hero` and dozens of references to `warrior`, `mage`, `rogue`, `huntress`, `duelist`, and `cleric`. The names were partially changed (e.g. 'Heavy-Duty Janitor' is used sometimes, but 'Warrior' is still used elsewhere). There are also remaining references to `magic`.
+- **Action Required:** Do a rigorous find-and-replace to ensure *every single instance* of `hero` is changed to something like `janitor` or `worker`, and *every instance* of the classic class names (Warrior, Mage, Rogue, Huntress, Duelist, Cleric) is replaced with your chosen factory equivalents (e.g. Heavy-Duty Janitor, Hazmat Technician, Aging Custodian, etc.). Eliminate all mentions of `magic` (replace with `anti-friction tech`, `chemical`, etc.).
 You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
 
 Please read the "Global Context & Lore" carefully before starting.
@@ -96,6 +104,10 @@ Make sure you do not alter files outside of your target directory.
 
 **Prompt for the Agent:**
 ```
+
+### QA Feedback / Adjustments
+- **Inconsistencies Found:** The lore still heavily relies on words like `dungeon`, `descend` (violates horizontal spatial layout lore), `amulet of yendor`, and classic level names like `sewer`, `prison`, `cave`, and `city`.
+- **Action Required:** Remove all references to `dungeon` (use `factory` or `facility`), `descend`/`go down` (use `proceed to the next sector`, `move laterally`), and `amulet of yendor` (use `ultimate ball bearing` or `infinite precision ball bearing`). Ensure all level lore and journal entries strictly adhere to the factory departments (Offices, Screw Machine Dept, Grind Dept, etc.) and lateral progression.
 You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
 
 Please read the "Global Context & Lore" carefully before starting.
@@ -125,6 +137,10 @@ Make sure you do not alter files outside of your target directories.
 
 **Prompt for the Agent:**
 ```
+
+### QA Feedback / Adjustments
+- **Inconsistencies Found:** UI and windows still contain references to `hero`, `gold`, `scroll`, `armor`, `weapon`, `magic`, and `dungeon`.
+- **Action Required:** Standardize the UI text to match the new terminology from Agents 2, 3, and 4. `Hero` must become `Janitor`, `Gold` must become `Company Scrip` or `Overtime Pay`, `Dungeon` must become `Factory`, and equipment tabs/prompts must use factory equivalents (`PPE`, `Tools`, `Forms`, `Sprays`).
 You are a creative writer and expert software engineer tasked with modding the text of a game (Shattered Pixel Dungeon). The goal is to change the game's aesthetic to a lighthearted survival horror set in a chaotic ball bearing factory.
 
 Please read the "Global Context & Lore" carefully before starting.
