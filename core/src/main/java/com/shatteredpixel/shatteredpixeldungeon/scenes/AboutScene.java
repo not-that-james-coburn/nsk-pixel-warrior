@@ -66,6 +66,19 @@ public class AboutScene extends PixelScene {
 
 		//*** Shattered Pixel Dungeon Credits ***
 
+		CreditsBlock james = new CreditsBlock(true, Window.SHPX_COLOR,
+				"NSK Pixel Warrior",
+				Icons.CHALLENGE_COLOR.get(),
+				"Mod Developed by: _James Coburn_",
+				null,
+				null);
+		if (landscape()){
+			james.setRect((w - fullWidth)/2f - 6, insets.top + 10, 120, 0);
+		} else {
+			james.setRect((w - fullWidth)/2f, insets.top + 6, 120, 0);
+		}
+		content.add(james);
+
 		CreditsBlock shpx = new CreditsBlock(true, Window.SHPX_COLOR,
 				"Shattered Pixel Dungeon",
 				Icons.SHPX.get(),
@@ -73,9 +86,9 @@ public class AboutScene extends PixelScene {
 				"ShatteredPixel.com",
 				"https://ShatteredPixel.com");
 		if (landscape()){
-			shpx.setRect((w - fullWidth)/2f - 6, insets.top + 10, 120, 0);
+			shpx.setRect((w - fullWidth)/2f - 6, james.bottom() + 10, 120, 0);
 		} else {
-			shpx.setRect((w - fullWidth)/2f, insets.top + 6, 120, 0);
+			shpx.setRect((w - fullWidth)/2f, james.bottom() + 6, 120, 0);
 		}
 		content.add(shpx);
 
