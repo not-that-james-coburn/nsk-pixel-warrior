@@ -49,6 +49,7 @@ public class WornKey extends Key {
 
 	@Override
 	public boolean doPickUp(Hero hero, int pos) {
+		/*
 		if(!SPDSettings.supportNagged()){
 			try {
 				Dungeon.saveAll();
@@ -63,6 +64,7 @@ public class WornKey extends Key {
 			}
 			
 		}
+		*/
 		
 		return super.doPickUp(hero, pos);
 	}
