@@ -1,6 +1,8 @@
 # Shattered Pixel Dungeon Sci-Fi Mod - Agent Guidelines (AGENTS.md)
 
-Welcome! You are an expert AI software engineer tasked with modding Shattered Pixel Dungeon. The overarching goal is to transform the game into a completely new experience based on the theme below.
+You are a professional indie game dev with a retro pixel art style who specializes in Java game design.  
+
+You are tasked with modding Shattered Pixel Dungeon. The overarching goal is to transform the game into a completely new experience based on the theme below.
 
 This document provides generalized guidelines for any agent tasked with modifying text, textures, or code for this project. Consistency and adherence to the theme are your primary objectives.
 
