@@ -1,0 +1,1080 @@
+{
+    "environments": {
+        "grid_width": 16,
+        "tile_size": 16,
+        "notes": "Tiles are 16x16. The DungeonTileSheet.java defines locations using a 1-based xy(column, row) format. For example, xy(1, 1) is the top-left tile.",
+        "tiles": [
+            {
+                "name": "NULL_TILE",
+                "index": -1,
+                "x": -1,
+                "y": -1
+            },
+            {
+                "name": "GROUND",
+                "index": 0,
+                "x": 1,
+                "y": 1
+            },
+            {
+                "name": "FLOOR",
+                "index": 0,
+                "x": 1,
+                "y": 1
+            },
+            {
+                "name": "FLOOR_DECO",
+                "index": 1,
+                "x": 2,
+                "y": 1
+            },
+            {
+                "name": "GRASS",
+                "index": 2,
+                "x": 3,
+                "y": 1
+            },
+            {
+                "name": "EMBERS",
+                "index": 3,
+                "x": 4,
+                "y": 1
+            },
+            {
+                "name": "FLOOR_SP",
+                "index": 4,
+                "x": 5,
+                "y": 1
+            },
+            {
+                "name": "FLOOR_ALT_1",
+                "index": 6,
+                "x": 7,
+                "y": 1
+            },
+            {
+                "name": "FLOOR_DECO_ALT",
+                "index": 7,
+                "x": 8,
+                "y": 1
+            },
+            {
+                "name": "GRASS_ALT",
+                "index": 8,
+                "x": 9,
+                "y": 1
+            },
+            {
+                "name": "EMBERS_ALT",
+                "index": 9,
+                "x": 10,
+                "y": 1
+            },
+            {
+                "name": "FLOOR_SP_ALT",
+                "index": 10,
+                "x": 11,
+                "y": 1
+            },
+            {
+                "name": "FLOOR_ALT_2",
+                "index": 12,
+                "x": 13,
+                "y": 1
+            },
+            {
+                "name": "ENTRANCE",
+                "index": 16,
+                "x": 1,
+                "y": 2
+            },
+            {
+                "name": "EXIT",
+                "index": 17,
+                "x": 2,
+                "y": 2
+            },
+            {
+                "name": "WELL",
+                "index": 18,
+                "x": 3,
+                "y": 2
+            },
+            {
+                "name": "EMPTY_WELL",
+                "index": 19,
+                "x": 4,
+                "y": 2
+            },
+            {
+                "name": "PEDESTAL",
+                "index": 20,
+                "x": 5,
+                "y": 2
+            },
+            {
+                "name": "ENTRANCE_SP",
+                "index": 22,
+                "x": 7,
+                "y": 2
+            },
+            {
+                "name": "CHASM",
+                "index": 24,
+                "x": 9,
+                "y": 2
+            },
+            {
+                "name": "CHASM_FLOOR",
+                "index": 25,
+                "x": 10,
+                "y": 2
+            },
+            {
+                "name": "CHASM_FLOOR_SP",
+                "index": 26,
+                "x": 11,
+                "y": 2
+            },
+            {
+                "name": "CHASM_WALL",
+                "index": 27,
+                "x": 12,
+                "y": 2
+            },
+            {
+                "name": "CHASM_WATER",
+                "index": 28,
+                "x": 13,
+                "y": 2
+            },
+            {
+                "name": "WATER",
+                "index": 32,
+                "x": 1,
+                "y": 3
+            },
+            {
+                "name": "FLAT_WALLS",
+                "index": 48,
+                "x": 1,
+                "y": 4
+            },
+            {
+                "name": "FLAT_WALL",
+                "index": 48,
+                "x": 1,
+                "y": 4
+            },
+            {
+                "name": "FLAT_WALL_DECO",
+                "index": 49,
+                "x": 2,
+                "y": 4
+            },
+            {
+                "name": "FLAT_BOOKSHELF",
+                "index": 50,
+                "x": 3,
+                "y": 4
+            },
+            {
+                "name": "FLAT_WALL_ALT",
+                "index": 52,
+                "x": 5,
+                "y": 4
+            },
+            {
+                "name": "FLAT_WALL_DECO_ALT",
+                "index": 53,
+                "x": 6,
+                "y": 4
+            },
+            {
+                "name": "FLAT_BOOKSHELF_ALT",
+                "index": 54,
+                "x": 7,
+                "y": 4
+            },
+            {
+                "name": "FLAT_DOOR",
+                "index": 56,
+                "x": 9,
+                "y": 4
+            },
+            {
+                "name": "FLAT_DOOR_OPEN",
+                "index": 57,
+                "x": 10,
+                "y": 4
+            },
+            {
+                "name": "FLAT_DOOR_LOCKED",
+                "index": 58,
+                "x": 11,
+                "y": 4
+            },
+            {
+                "name": "FLAT_DOOR_CRYSTAL",
+                "index": 59,
+                "x": 12,
+                "y": 4
+            },
+            {
+                "name": "UNLOCKED_EXIT",
+                "index": 60,
+                "x": 13,
+                "y": 4
+            },
+            {
+                "name": "LOCKED_EXIT",
+                "index": 61,
+                "x": 14,
+                "y": 4
+            },
+            {
+                "name": "FLAT_OTHER",
+                "index": 64,
+                "x": 1,
+                "y": 5
+            },
+            {
+                "name": "FLAT_ALCHEMY_POT",
+                "index": 64,
+                "x": 1,
+                "y": 5
+            },
+            {
+                "name": "FLAT_BARRICADE",
+                "index": 65,
+                "x": 2,
+                "y": 5
+            },
+            {
+                "name": "FLAT_HIGH_GRASS",
+                "index": 66,
+                "x": 3,
+                "y": 5
+            },
+            {
+                "name": "FLAT_FURROWED_GRASS",
+                "index": 67,
+                "x": 4,
+                "y": 5
+            },
+            {
+                "name": "FLAT_HIGH_GRASS_ALT",
+                "index": 69,
+                "x": 6,
+                "y": 5
+            },
+            {
+                "name": "FLAT_FURROWED_ALT",
+                "index": 70,
+                "x": 7,
+                "y": 5
+            },
+            {
+                "name": "FLAT_STATUE",
+                "index": 72,
+                "x": 9,
+                "y": 5
+            },
+            {
+                "name": "FLAT_STATUE_SP",
+                "index": 73,
+                "x": 10,
+                "y": 5
+            },
+            {
+                "name": "FLAT_REGION_DECO",
+                "index": 74,
+                "x": 11,
+                "y": 5
+            },
+            {
+                "name": "FLAT_REGION_DECO_ALT",
+                "index": 75,
+                "x": 12,
+                "y": 5
+            },
+            {
+                "name": "FLAT_MINE_CRYSTAL",
+                "index": 76,
+                "x": 13,
+                "y": 5
+            },
+            {
+                "name": "FLAT_MINE_CRYSTAL_ALT",
+                "index": 77,
+                "x": 14,
+                "y": 5
+            },
+            {
+                "name": "FLAT_MINE_CRYSTAL_ALT_2",
+                "index": 78,
+                "x": 15,
+                "y": 5
+            },
+            {
+                "name": "FLAT_MINE_BOULDER",
+                "index": 76,
+                "x": 13,
+                "y": 5
+            },
+            {
+                "name": "FLAT_MINE_BOULDER_ALT",
+                "index": 77,
+                "x": 14,
+                "y": 5
+            },
+            {
+                "name": "FLAT_MINE_BOULDER_ALT_2",
+                "index": 78,
+                "x": 15,
+                "y": 5
+            },
+            {
+                "name": "RAISED_WALLS",
+                "index": 80,
+                "x": 1,
+                "y": 6
+            },
+            {
+                "name": "RAISED_WALL",
+                "index": 80,
+                "x": 1,
+                "y": 6
+            },
+            {
+                "name": "RAISED_WALL_DECO",
+                "index": 84,
+                "x": 5,
+                "y": 6
+            },
+            {
+                "name": "RAISED_WALL_DOOR",
+                "index": 88,
+                "x": 9,
+                "y": 6
+            },
+            {
+                "name": "RAISED_WALL_BOOKSHELF",
+                "index": 92,
+                "x": 13,
+                "y": 6
+            },
+            {
+                "name": "RAISED_WALL_ALT",
+                "index": 96,
+                "x": 1,
+                "y": 7
+            },
+            {
+                "name": "RAISED_WALL_DECO_ALT",
+                "index": 100,
+                "x": 5,
+                "y": 7
+            },
+            {
+                "name": "RAISED_WALL_BOOKSHELF_ALT",
+                "index": 108,
+                "x": 13,
+                "y": 7
+            },
+            {
+                "name": "RAISED_DOORS",
+                "index": 112,
+                "x": 1,
+                "y": 8
+            },
+            {
+                "name": "RAISED_DOOR",
+                "index": 112,
+                "x": 1,
+                "y": 8
+            },
+            {
+                "name": "RAISED_DOOR_OPEN",
+                "index": 113,
+                "x": 2,
+                "y": 8
+            },
+            {
+                "name": "RAISED_DOOR_LOCKED",
+                "index": 114,
+                "x": 3,
+                "y": 8
+            },
+            {
+                "name": "RAISED_DOOR_CRYSTAL",
+                "index": 115,
+                "x": 4,
+                "y": 8
+            },
+            {
+                "name": "RAISED_DOOR_SIDEWAYS",
+                "index": 116,
+                "x": 5,
+                "y": 8
+            },
+            {
+                "name": "RAISED_OTHER",
+                "index": 120,
+                "x": 9,
+                "y": 8
+            },
+            {
+                "name": "RAISED_ALCHEMY_POT",
+                "index": 120,
+                "x": 9,
+                "y": 8
+            },
+            {
+                "name": "RAISED_BARRICADE",
+                "index": 121,
+                "x": 10,
+                "y": 8
+            },
+            {
+                "name": "RAISED_HIGH_GRASS",
+                "index": 122,
+                "x": 11,
+                "y": 8
+            },
+            {
+                "name": "RAISED_FURROWED_GRASS",
+                "index": 123,
+                "x": 12,
+                "y": 8
+            },
+            {
+                "name": "RAISED_HIGH_GRASS_ALT",
+                "index": 125,
+                "x": 14,
+                "y": 8
+            },
+            {
+                "name": "RAISED_FURROWED_ALT",
+                "index": 126,
+                "x": 15,
+                "y": 8
+            },
+            {
+                "name": "RAISED_STATUE",
+                "index": 128,
+                "x": 1,
+                "y": 9
+            },
+            {
+                "name": "RAISED_STATUE_SP",
+                "index": 129,
+                "x": 2,
+                "y": 9
+            },
+            {
+                "name": "RAISED_REGION_DECO",
+                "index": 130,
+                "x": 3,
+                "y": 9
+            },
+            {
+                "name": "RAISED_REGION_DECO_ALT",
+                "index": 131,
+                "x": 4,
+                "y": 9
+            },
+            {
+                "name": "RAISED_MINE_CRYSTAL",
+                "index": 132,
+                "x": 5,
+                "y": 9
+            },
+            {
+                "name": "RAISED_MINE_CRYSTAL_ALT",
+                "index": 133,
+                "x": 6,
+                "y": 9
+            },
+            {
+                "name": "RAISED_MINE_CRYSTAL_ALT_2",
+                "index": 134,
+                "x": 7,
+                "y": 9
+            },
+            {
+                "name": "RAISED_MINE_BOULDER",
+                "index": 132,
+                "x": 5,
+                "y": 9
+            },
+            {
+                "name": "RAISED_MINE_BOULDER_ALT",
+                "index": 133,
+                "x": 6,
+                "y": 9
+            },
+            {
+                "name": "RAISED_MINE_BOULDER_ALT_2",
+                "index": 134,
+                "x": 7,
+                "y": 9
+            },
+            {
+                "name": "WALLS_INTERNAL",
+                "index": 144,
+                "x": 1,
+                "y": 10
+            },
+            {
+                "name": "WALL_INTERNAL",
+                "index": 144,
+                "x": 1,
+                "y": 10
+            },
+            {
+                "name": "WALL_INTERNAL_DECO",
+                "index": 160,
+                "x": 1,
+                "y": 11
+            },
+            {
+                "name": "WALL_INTERNAL_WOODEN",
+                "index": 176,
+                "x": 1,
+                "y": 12
+            },
+            {
+                "name": "WALLS_OVERHANG",
+                "index": 192,
+                "x": 1,
+                "y": 13
+            },
+            {
+                "name": "WALL_OVERHANG",
+                "index": 192,
+                "x": 1,
+                "y": 13
+            },
+            {
+                "name": "WALL_OVERHANG_DECO",
+                "index": 196,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "name": "WALL_OVERHANG_WOODEN",
+                "index": 200,
+                "x": 9,
+                "y": 13
+            },
+            {
+                "name": "DOOR_SIDEWAYS_OVERHANG",
+                "index": 208,
+                "x": 1,
+                "y": 14
+            },
+            {
+                "name": "DOOR_SIDEWAYS_OVERHANG_CLOSED",
+                "index": 212,
+                "x": 5,
+                "y": 14
+            },
+            {
+                "name": "DOOR_SIDEWAYS_OVERHANG_LOCKED",
+                "index": 216,
+                "x": 9,
+                "y": 14
+            },
+            {
+                "name": "DOOR_SIDEWAYS_OVERHANG_CRYSTAL",
+                "index": 220,
+                "x": 13,
+                "y": 14
+            },
+            {
+                "name": "DOOR_OVERHANG",
+                "index": 224,
+                "x": 1,
+                "y": 15
+            },
+            {
+                "name": "DOOR_OVERHANG_OPEN",
+                "index": 225,
+                "x": 2,
+                "y": 15
+            },
+            {
+                "name": "DOOR_OVERHANG_CRYSTAL",
+                "index": 226,
+                "x": 3,
+                "y": 15
+            },
+            {
+                "name": "DOOR_SIDEWAYS",
+                "index": 227,
+                "x": 4,
+                "y": 15
+            },
+            {
+                "name": "DOOR_SIDEWAYS_LOCKED",
+                "index": 228,
+                "x": 5,
+                "y": 15
+            },
+            {
+                "name": "DOOR_SIDEWAYS_CRYSTAL",
+                "index": 229,
+                "x": 6,
+                "y": 15
+            },
+            {
+                "name": "EXIT_UNDERHANG",
+                "index": 230,
+                "x": 7,
+                "y": 15
+            },
+            {
+                "name": "OTHER_OVERHANG",
+                "index": 232,
+                "x": 9,
+                "y": 15
+            },
+            {
+                "name": "ALCHEMY_POT_OVERHANG",
+                "index": 232,
+                "x": 9,
+                "y": 15
+            },
+            {
+                "name": "BARRICADE_OVERHANG",
+                "index": 233,
+                "x": 10,
+                "y": 15
+            },
+            {
+                "name": "HIGH_GRASS_OVERHANG",
+                "index": 234,
+                "x": 11,
+                "y": 15
+            },
+            {
+                "name": "FURROWED_OVERHANG",
+                "index": 235,
+                "x": 12,
+                "y": 15
+            },
+            {
+                "name": "HIGH_GRASS_OVERHANG_ALT",
+                "index": 237,
+                "x": 14,
+                "y": 15
+            },
+            {
+                "name": "FURROWED_OVERHANG_ALT",
+                "index": 238,
+                "x": 15,
+                "y": 15
+            },
+            {
+                "name": "STATUE_OVERHANG",
+                "index": 240,
+                "x": 1,
+                "y": 16
+            },
+            {
+                "name": "STATUE_SP_OVERHANG",
+                "index": 241,
+                "x": 2,
+                "y": 16
+            },
+            {
+                "name": "REGION_DECO_OVERHANG",
+                "index": 242,
+                "x": 3,
+                "y": 16
+            },
+            {
+                "name": "REGION_DECO_ALT_OVERHANG",
+                "index": 243,
+                "x": 4,
+                "y": 16
+            },
+            {
+                "name": "MINE_CRYSTAL_OVERHANG",
+                "index": 244,
+                "x": 5,
+                "y": 16
+            },
+            {
+                "name": "MINE_CRYSTAL_OVERHANG_ALT",
+                "index": 245,
+                "x": 6,
+                "y": 16
+            },
+            {
+                "name": "MINE_CRYSTAL_OVERHANG_ALT_2",
+                "index": 246,
+                "x": 7,
+                "y": 16
+            },
+            {
+                "name": "MINE_BOULDER_OVERHANG",
+                "index": 244,
+                "x": 5,
+                "y": 16
+            },
+            {
+                "name": "MINE_BOULDER_OVERHANG_ALT",
+                "index": 245,
+                "x": 6,
+                "y": 16
+            },
+            {
+                "name": "MINE_BOULDER_OVERHANG_ALT_2",
+                "index": 246,
+                "x": 7,
+                "y": 16
+            },
+            {
+                "name": "HIGH_GRASS_UNDERHANG",
+                "index": 250,
+                "x": 11,
+                "y": 16
+            },
+            {
+                "name": "FURROWED_UNDERHANG",
+                "index": 251,
+                "x": 12,
+                "y": 16
+            },
+            {
+                "name": "HIGH_GRASS_UNDERHANG_ALT",
+                "index": 253,
+                "x": 14,
+                "y": 16
+            },
+            {
+                "name": "FURROWED_UNDERHANG_ALT",
+                "index": 254,
+                "x": 15,
+                "y": 16
+            }
+        ]
+    },
+    "sprites": {
+        "ScorpioSprite": {
+            "frame_width": 17,
+            "frame_height": 17
+        },
+        "GnollTricksterSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "CrystalSpireSprite": {
+            "frame_width": 24,
+            "frame_height": 41
+        },
+        "HermitCrabSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "ShamanSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "DM201Sprite": {
+            "frame_width": 21,
+            "frame_height": 18
+        },
+        "MonkSprite": {
+            "frame_width": 15,
+            "frame_height": 14
+        },
+        "RatSprite": {
+            "frame_width": 16,
+            "frame_height": 15
+        },
+        "GhostSprite": {
+            "frame_width": 14,
+            "frame_height": 15
+        },
+        "UndeadSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "SpectralNecromancerSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "DM100Sprite": {
+            "frame_width": 16,
+            "frame_height": 14
+        },
+        "GnollSapperSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "DM200Sprite": {
+            "frame_width": 21,
+            "frame_height": 18
+        },
+        "LarvaSprite": {
+            "frame_width": 12,
+            "frame_height": 8
+        },
+        "RotLasherSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "LotusSprite": {
+            "frame_width": 19,
+            "frame_height": 16
+        },
+        "ElementalSprite": {
+            "frame_width": 12,
+            "frame_height": 14
+        },
+        "SpawnerSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "SwarmSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "WarlockSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "SlimeSprite": {
+            "frame_width": 14,
+            "frame_height": 12
+        },
+        "GuardSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "YogSprite": {
+            "frame_width": 20,
+            "frame_height": 19
+        },
+        "GnollGeomancerSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "PhantomPiranhaSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "ShopkeeperSprite": {
+            "frame_width": 14,
+            "frame_height": 14
+        },
+        "GnollGuardSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "WraithSprite": {
+            "frame_width": 14,
+            "frame_height": 15
+        },
+        "RipperSprite": {
+            "frame_width": 15,
+            "frame_height": 14
+        },
+        "BanditSprite": {
+            "frame_width": 12,
+            "frame_height": 13
+        },
+        "ImpSprite": {
+            "frame_width": 12,
+            "frame_height": 14
+        },
+        "GreatCrabSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "FungalCoreSprite": {
+            "frame_width": 27,
+            "frame_height": 27
+        },
+        "GnollExileSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "MimicSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "CrystalGuardianSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "FistSprite": {
+            "frame_width": 24,
+            "frame_height": 17
+        },
+        "NewbornElementalSprite": {
+            "frame_width": 12,
+            "frame_height": 14
+        },
+        "BlacksmithSprite": {
+            "frame_width": 13,
+            "frame_height": 16
+        },
+        "SnakeSprite": {
+            "frame_width": 12,
+            "frame_height": 11
+        },
+        "NecromancerSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "TenguSprite": {
+            "frame_width": 14,
+            "frame_height": 16
+        },
+        "ShieldedSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "StatueSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "PiranhaSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "EyeSprite": {
+            "frame_width": 16,
+            "frame_height": 18
+        },
+        "GhoulSprite": {
+            "frame_width": 12,
+            "frame_height": 14
+        },
+        "CrystalWispSprite": {
+            "frame_width": 12,
+            "frame_height": 14
+        },
+        "FungalSentrySprite": {
+            "frame_width": 18,
+            "frame_height": 18
+        },
+        "FetidRatSprite": {
+            "frame_width": 16,
+            "frame_height": 15
+        },
+        "CrabSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "AlbinoSprite": {
+            "frame_width": 16,
+            "frame_height": 15
+        },
+        "PylonSprite": {
+            "frame_width": 10,
+            "frame_height": 20
+        },
+        "WandmakerSprite": {
+            "frame_width": 12,
+            "frame_height": 14
+        },
+        "ThiefSprite": {
+            "frame_width": 12,
+            "frame_height": 13
+        },
+        "BatSprite": {
+            "frame_width": 15,
+            "frame_height": 15
+        },
+        "SkeletonSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "EarthGuardianSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "AcidicSprite": {
+            "frame_width": 17,
+            "frame_height": 17
+        },
+        "SuccubusSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        },
+        "BruteSprite": {
+            "frame_width": 12,
+            "frame_height": 16
+        },
+        "DM300Sprite": {
+            "frame_width": 25,
+            "frame_height": 22
+        },
+        "RotHeartSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "BeeSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "RatKingSprite": {
+            "frame_width": 16,
+            "frame_height": 17
+        },
+        "FungalSpinnerSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "KingSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "SpinnerSprite": {
+            "frame_width": 16,
+            "frame_height": 16
+        },
+        "TormentedSpiritSprite": {
+            "frame_width": 14,
+            "frame_height": 15
+        },
+        "CausticSlimeSprite": {
+            "frame_width": 14,
+            "frame_height": 12
+        },
+        "SheepSprite": {
+            "frame_width": 16,
+            "frame_height": 15
+        },
+        "GolemSprite": {
+            "frame_width": 17,
+            "frame_height": 19
+        },
+        "GooSprite": {
+            "frame_width": 20,
+            "frame_height": 14
+        },
+        "SeniorSprite": {
+            "frame_width": 15,
+            "frame_height": 14
+        },
+        "GnollSprite": {
+            "frame_width": 12,
+            "frame_height": 15
+        }
+    },
+    "items": {
+        "SIZE": 16,
+        "notes": "items.png and item_icons.png are structured in a grid of 16x16 tiles. ItemSpriteSheet.java maps item IDs to these 16x16 frames using xy(column, row) matching.",
+        "layout": "Items are 16x16. The items.png texture has width 256 and height 512, which gives a 16x32 grid.",
+        "icons_layout": "item_icons.png texture size is the same, 256x512."
+    },
+    "heroes": {
+        "notes": "All hero class sprite sheets (warrior.png, mage.png, etc.) share an identical 16x15 frame structure (width 16px, height 15px) across 8 rows, mapped to armor tiers."
+    }
+}
