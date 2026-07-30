@@ -71,9 +71,29 @@ The game's pixel art style is specific. When re-theming, palette swapping, or al
    - **Animations:**
      - Frames 3 and 9 feature an animated head bob where the head shifts exactly 1 pixel lower.
      - Frames 6, 7, and 8 (`x >= 96`) contain greyscale skull/ghost animations that should **not** be tinted or modified during armor palette swaps.
-3. **Indexed Palettes and Python:**
+3. **Indexed Palettes and the Pixel Workbench:**
    - Character sprite sheets are indexed color (mode 'P') PNG files, each with a different palette.
-   - When modifying using scripts (like Python's `Pillow`), **always convert and process in RGBA mode** to prevent color corruption and preserve transparency, then optionally convert back.
+   - You MUST use the included **Pixel Workbench** application located in the `pixel_workbench` package to edit textures deterministically.
+   - **Do NOT silently convert 'P' mode images to RGBA.** The workbench treats 'P' mode as a first-class format.
+   - Use the Workbench's Python API in scripts to manipulate palettes directly without destroying color fidelity.
+   - Example Usage for Agents:
+     ```python
+     from pixel_workbench import Workbench
+
+     wb = Workbench()
+     wb.open("core/src/main/assets/warrior.png")
+
+     # Use replace_color to swap colors safely within the palette
+     wb.replace_color("#FF0000", "#0000FF")
+
+     # Use paint_index for explicit 'P' mode pixel edits
+     wb.paint_index(x=5, y=5, index=2)
+
+     # Always validate your changes
+     result = wb.validate()
+     if result.ok:
+         wb.save("core/src/main/assets/warrior.png")
+     ```
 
 ---
 
