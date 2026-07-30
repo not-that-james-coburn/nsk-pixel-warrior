@@ -1,0 +1,5 @@
+# Example CLI batch script
+open test_warrior.png
+replace_color #FF0000 #00FF00
+paint_index 8 10 1
+save test_warrior_edited.png
