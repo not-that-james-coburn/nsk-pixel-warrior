@@ -62,16 +62,18 @@ When modifying the game's text to fit the new lore, follow these strict technica
 
 The game's pixel art style is specific. When re-theming, palette swapping, or altering textures, adhere to these rules:
 
-1. **Do NOT Alter Original Sizings:**
+1. **Reference Guide:**
+   - A comprehensive reference for the exact coordinates, frame widths, heights, and mappings of environments, sprites, and item icons can be found at `docs/texture_reference.json`. Use this guide when calculating coordinates or ensuring sprite alignment.
+2. **Do NOT Alter Original Sizings:**
    - The dimensions of the sprites and sprite sheets are hardcoded in the engine. Modifying sheet dimensions or frame sizes will break rendering.
-2. **Hero Sprite Sheets (`warrior.png`, `mage.png`, etc.):**
+3. **Hero Sprite Sheets (`warrior.png`, `mage.png`, etc.):**
    - **Structure:** 8 rows corresponding to armor tiers (0: Unarmored, 1: Cloth, 2: Leather, 3: Mail, 4: Scale, 5: Plate, 6: Class armor).
    - **Frames:** Exactly 16x15 pixels (width 16px, height 15px).
    - **Layout:** The top half of a frame (`y % 15 < 8`) contains the character's unique head. The bottom half contains the shared body/armor.
    - **Animations:**
      - Frames 3 and 9 feature an animated head bob where the head shifts exactly 1 pixel lower.
      - Frames 6, 7, and 8 (`x >= 96`) contain greyscale skull/ghost animations that should **not** be tinted or modified during armor palette swaps.
-3. **Indexed Palettes and Python:**
+4. **Indexed Palettes and Python:**
    - Character sprite sheets are indexed color (mode 'P') PNG files, each with a different palette.
    - When modifying using scripts (like Python's `Pillow`), **always convert and process in RGBA mode** to prevent color corruption and preserve transparency, then optionally convert back.
 
