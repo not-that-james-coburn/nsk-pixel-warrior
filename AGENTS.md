@@ -75,7 +75,16 @@ The game's pixel art style is specific. When re-theming, palette swapping, or al
      - Frames 6, 7, and 8 (`x >= 96`) contain greyscale skull/ghost animations that should **not** be tinted or modified during armor palette swaps.
 4. **Indexed Palettes and Python:**
    - Character sprite sheets are indexed color (mode 'P') PNG files, each with a different palette.
-   - When modifying using scripts (like Python's `Pillow`), **always convert and process in RGBA mode** to prevent color corruption and preserve transparency, then optionally convert back.
+   - When modifying using legacy scripts, converting to RGBA might be necessary. However, when using the **Pixel Workbench**, you must treat 'P' mode sprites as a first-class format. Edit palette indices directly (e.g. `paint_index`, `replace_index`) to preserve color fidelity and avoid silent conversion to RGBA.
+
+### Pixel Workbench (Reasoning Engine)
+
+The repository includes `pixel_workbench`, a standalone Python application and API that serves as a **Reasoning Engine** for pixel art. It is designed to be used equally well by humans and autonomous coding agents.
+
+- **Semantic Focus:** The Workbench is not an "AI Image Generator". Its primary value is extracting structured, semantic metadata (`SpriteAnalysis`) from sprites so agents can reason about properties like `outline`, `clusters`, `symmetry`, and `lighting`.
+- **Deterministic Editing:** Exposes high-level deterministic operations and a rule-based `repair` engine to fix common pixel art flaws safely.
+- **Coding Agent Workspaces:** When working as an agent, use the `CodingAgentProvider` to initialize a `SpriteWorkspace`. This bundles the `Document`, `Analysis`, `Validation`, and `History`, giving you a complete mental model of the sprite without needing to reverse engineer raw pixels.
+- **Construction over Generation:** If you need to generate images, remember the philosophy is to *construct* sprites iteratively (Draft -> Analyze -> Review -> Repair) rather than blindly hallucinating PNGs.
 
 ---
 
